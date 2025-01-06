@@ -1,0 +1,67 @@
+.leftBarComponnent{
+    background-color: #212529;
+    width:20%;
+    height: 100vh;
+    padding: 5rem 2rem 5rem 2rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;}
+
+/* Button*/
+.newMesageCompenent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newMessage{
+    width: 300px;
+    height: 50px;
+    background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
+    border: none;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    box-shadow: 1px 3px 0px rgb(139, 113, 255);
+    transition-duration: .3s;
+}
+.newMessage:active {
+    transform: translate(2px ,0px);
+    box-shadow: 0px 1px 0px rgb(139, 113, 255);
+    padding-bottom: 1px;
+  }
+  
+/* Message */
+.messageComponent{
+    padding: 4rem 0 4rem 0;
+}
+.messageSummary {
+    display: flex;
+    align-items: center;  /* Dikeyde ortalamak için */
+    justify-content: space-between;  /* İçeriği aralarına boşluk bırakarak yayar */
+    list-style: none;
+    margin: 1.2rem;
+    padding: 0.8rem;
+    border-radius: 14px;
+    font-size: 1rem;
+    font-size: 1.1rem;
+    background-color: #212529;
+    color: white;
+    padding-right: 30px; /* Silme butonuna yer açmak için */
+}
+.messageSummary:hover{
+    background-color: #25292e;
+}
+.messageSummary.active{
+    background-color: #30363b;
+}
+.deleteButton {
+    background-color: rgb(139, 113, 255);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
